@@ -36,7 +36,7 @@ console.log(view);
 <ListGroup.Item> <h5 className='mt-5'> {view?.name} </h5> </ListGroup.Item>
 <ListGroup.Item> <b> {view?.cuisine} </b> </ListGroup.Item>
 <ListGroup.Item>{view?.mealType} </ListGroup.Item>
-<img src={view?.image} className='w-100% p-5' style={{height:'50%'} } alt="" />
+<img src={view?.image} className='w-100% p-5' style={{height:'35%'} } alt="" />
 
 </Col>
 
