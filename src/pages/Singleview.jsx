@@ -32,15 +32,19 @@ console.log(view);
       { view?.id?
     <Row>
 <Col lg={6}>
-<img src={view?.image} className='w-100% p-5' style={{height:'80%'}} alt="" />
+
+<ListGroup.Item> <h5 className='mt-5'> {view?.name} </h5> </ListGroup.Item>
+<ListGroup.Item> <b> {view?.cuisine} </b> </ListGroup.Item>
+<ListGroup.Item>{view?.mealType} </ListGroup.Item>
+<img src={view?.image} className='w-100% p-5' style={{height:'50%'} } alt="" />
+
 </Col>
 
 <Col lg={6}>
 <ListGroup className='m-5 p-5'>
-<ListGroup.Item> <h5> {view?.name} </h5> </ListGroup.Item>
-      <ListGroup.Item> <b> {view?.cuisine} </b> </ListGroup.Item>
-      <ListGroup.Item>{view?.mealType} </ListGroup.Item>
-     <hr />
+
+    
+   
       <ListGroup.Item> <b> INGREDIENTS </b> 
                 <>
                   {view?.ingredients.map((ingredient, index) => (
